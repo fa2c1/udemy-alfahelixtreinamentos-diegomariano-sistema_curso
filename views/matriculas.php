@@ -14,11 +14,11 @@
               echo '<tr><td >'.$linha['nome_aluno'].'</td>';
               echo '<td>'.$linha['nome_curso'].'</td>';
           ?>
-            <td><a class="btn btn-danger" href="deleta_matricula.php?id_aluno_curso=<?php echo $linha['id_aluno_curso']; ?>">Deletar</a></td></tr>
+            <td><a class="btn btn-danger" href="deleta_matricula.php?id_aluno_curso=<?php echo $linha['id_aluno_curso'];?>"><i class="fa-solid fa-eraser"></i> Deletar</a></td></tr>
           <?php		
             }
           ?>
         </tbody>
       </table>
-      <a class="btn btn-success botao" href="?pagina=inserir_matricula">Inserir nova matricula</a>
+      <a class="btn btn-success botao" href="?pagina=inserir_matricula"><i class="fa-solid fa-plus"></i> Inserir nova matricula</a>
     </div>

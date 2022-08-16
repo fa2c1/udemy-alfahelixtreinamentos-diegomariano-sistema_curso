@@ -12,15 +12,15 @@
         <tbody>
           <?php 
             while($linha = mysqli_fetch_array($consulta_cursos)){
-              echo '<tr><td >'.$linha['nome_curso'].'</td>';
+              echo '<tr><td>'.$linha['nome_curso'].'</td>';
               echo '<td>'.$linha['carga_horaria'].'</td>';
           ?>
-            <td><a class="btn btn-warning" href="?pagina=inserir_curso&editar=<?php echo $linha['id_curso']; ?>">Editar</a></td>
-            <td><a class="btn btn-danger" href="deleta_curso.php?id_curso=<?php echo $linha['id_curso']; ?>">Deletar</a></td></tr>
+            <td><a class="btn btn-warning" href="?pagina=inserir_curso&editar=<?php echo $linha['id_curso'];?>"><i class="fa-solid fa-pencil"></i> Editar</a></td>
+            <td><a class="btn btn-danger" href="deleta_curso.php?id_curso=<?php echo $linha['id_curso'];?>"><i class="fa-solid fa-eraser"></i> Deletar</a></td></tr>
           <?php
             }
           ?>
         </tbody>
       </table>
-      <a class="btn btn-success botao" href="?pagina=inserir_curso">Cadastrar Curso</a>
+      <a class="btn btn-success botao" href="?pagina=inserir_curso"><i class="fa-solid fa-plus"></i> Cadastrar Curso</a>
     </div>
