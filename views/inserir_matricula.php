@@ -13,8 +13,8 @@
       </select>
     </div>
     <div class="mb-3">
-      <label for="selecionar_aluno" class="form-label">Selecione o Curso</label>
-      <select class="form-select" name="escolha_aluno">
+      <label for="selecionar_curso" class="form-label">Selecione o Curso</label>
+      <select class="form-select" name="escolha_curso">
         <option>Cursos Cadastrados</option>
           <?php 
             while($linha = mysqli_fetch_array($consulta_cursos)){
