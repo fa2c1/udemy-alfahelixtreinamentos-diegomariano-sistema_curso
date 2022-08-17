@@ -40,6 +40,18 @@
   )";
   
   $executar = mysqli_query($conexao, $query);
+
+  # Tabela de usuarios do sistema(nome, email senha)
+  $query = "CREATE TABLE usuarios(
+	id_usuario INT NOT NULL AUTO_INCREMENT,
+    nome VARCHAR(50) NOT NULL,
+    email VARCHAR(30) NOT NULL,
+    senha VARCHAR(36) NOT NULL,
+    PRIMARY KEY(id_usuario),
+    UNIQUE KEY(email)
+  )";
+
+  $executar = mysqli_query($conexao, $query);
   
   # Inserir dados nas tabelas **************************************
 
@@ -55,6 +67,10 @@
   
   # Alunos curso
   $query = "INSERT INTO alunos_cursos(id_aluno, id_curso) VALUES(1, 1)";
+  mysqli_query($conexao, $query);
+
+   # Usuario do sistema
+  $query = "INSERT INTO usuarios(nome, email, senha) VALUES('Root', 'root@admsistema.com', '123456')";
   mysqli_query($conexao, $query);
   
   # Deletando alunos **************************************
