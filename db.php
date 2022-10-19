@@ -1,8 +1,8 @@
 <?php     
   # Conexão com o banco de dados MySQL
   $servidor = "localhost";
-  $usuario = "root";
-  $senha = "";
+  $usuario = "fernando";
+  $senha = "L0g4r";
   $database = "cursos";
   
   $conexao = mysqli_connect($servidor, $usuario, $senha, $database);
@@ -19,4 +19,3 @@
     AND alunos_cursos.id_curso = cursos.id_curso";
 			
 $consulta_matriculas = mysqli_query($conexao, $query);
-?>

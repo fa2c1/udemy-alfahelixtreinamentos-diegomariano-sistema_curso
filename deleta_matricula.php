@@ -7,4 +7,3 @@ include 'db.php';
   mysqli_query($conexao, $query);
 
   header('location:index.php?pagina=matriculas');
-?>

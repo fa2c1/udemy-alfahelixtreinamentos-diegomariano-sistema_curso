@@ -10,4 +10,3 @@
   mysqli_query($conexao, $query);
 
   header('location:index.php?pagina=cursos');
-?>

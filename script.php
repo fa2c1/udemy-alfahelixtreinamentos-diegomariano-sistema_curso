@@ -1,14 +1,14 @@
 <?php
-/*     
+   
   # Conexão com o banco de dados MySQL *****************************************
   $servidor = "localhost";
-  $usuario = "root";
-  $senha = "";
+  $usuario = "fernando";
+  $senha = "L0g4r";
   $database = "cursos";
   
   $conexao = mysqli_connect($servidor, $usuario, $senha, $database);
   
-
+/*
   # Criando tabelas usando PHP ************************************************
 
   # Tabela cursos (nome do curso, carga horaria)
@@ -128,4 +128,3 @@
   
   echo '</table>';
 */  
- ?>
